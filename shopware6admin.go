@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"shopware6admin/config"
+)
 
 func main() {
-	fmt.Println("Hello World")
+	var config config.Config
+	config.AdminApiUrl = ""
+	config.ClientId = ""
+	config.ClientSecret = ""
+
 }
